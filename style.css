@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* centering main */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+main {
+    width: 750px;
+    height: 761.25px; 
+    background: url(images/background_edited.jpg) no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.logo {
+    width: 60%; /* is that the way to set width when using flex column ? */
+    display: flex;
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.banner {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    border: 5px solid black;
+    background-image: url(images/transparent_white.png);
+}
+
+.banner h1 {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin: 10px 0;
+}
+
+.banner p {
+    text-align: center;
+    font-size: 0.94rem;
+    margin: 10px 0;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px 0;
+
+    background-image: url(images/transparent_white.png);
+}
+
+.form h2 {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.form p {
+    margin: 10px 0;
+}
+
+.form form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+.form form label {
+    background-color: #363636;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 3px 3px;
+    margin-top: 5px;
+}
+
+.form form input {
+    padding: 4px 3px;
+}
+
+.form form input::placeholder {
+    font-style: italic;
+    padding: 10px 3px;
+}
+
+.form form input[type="datetime"]::placeholder {
+    color: black;
+    opacity: 1;
+    font-style: italic;
+    padding: 3px 3px;
+}
+
+.form form input[type="submit"] {
+    background-color: #363636;
+    color: white;
+    font-style: italic;
+    border: 0;
+    margin: 5px 0 20px;
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.footer {
+    margin-top: 20px;
+    color: white;
+    opacity: 0.3;
+}
