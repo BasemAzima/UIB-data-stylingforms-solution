@@ -24,55 +24,44 @@ main {
     align-items: center;
 }
 
-.logo {
+.logo, .banner, .form, .footer {
     width: 60%; /* is that the way to set width when using flex column ? */
-    display: flex;
-    margin: 20px 0;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .logo img {
     width: 100%;
 }
 
-.banner {
-    width: 60%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-
-    border: 5px solid black;
+.banner, .form {
     background-image: url(images/transparent_white.png);
+}
+
+.banner {
+    border: 5px solid black;
+}
+
+.banner h1, .banner p, .form h2, .form p {
+    margin: 10px 0;
+}
+
+.banner h1, .form h2 {
+    font-weight: 500;
 }
 
 .banner h1 {
-    font-weight: 500;
     font-size: 1.9rem;
-    margin: 10px 0;
 }
 
 .banner p {
-    text-align: center;
     font-size: 0.94rem;
-    margin: 10px 0;
 }
 
 .form {
-    width: 60%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 20px 0;
-
-    background-image: url(images/transparent_white.png);
-}
-
-.form h2 {
-    font-weight: 500;
-    margin: 10px 0;
-}
-
-.form p {
-    margin: 10px 0;
 }
 
 .form form {
@@ -81,11 +70,15 @@ main {
     width: 50%;
 }
 
-.form form label {
+.form form label, .form form input[type="submit"] {
     background-color: #363636;
     color: white;
+}
+
+.form form label {
     font-size: 0.5rem;
     font-weight: bold;
+    text-align: initial;
     padding: 3px 3px;
     margin-top: 5px;
 }
@@ -107,8 +100,6 @@ main {
 }
 
 .form form input[type="submit"] {
-    background-color: #363636;
-    color: white;
     font-style: italic;
     border: 0;
     margin: 5px 0 20px;
@@ -118,7 +109,7 @@ main {
 }
 
 .footer {
-    margin-top: 20px;
+    margin-top: 40px;
     color: white;
     opacity: 0.3;
 }
